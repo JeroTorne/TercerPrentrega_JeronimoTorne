@@ -1,0 +1,37 @@
+{% extends 'aplicacion/base.html' %}
+{% load static %}
+    {% block masterhead %}
+                    
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white">
+                            <!-- Page heading-->
+                            <h1 class="mb-5">Deje su consulta aquí</h1>
+                            
+                            <div>
+                            {% csrf_token %}
+                            <p>Nombre: <input text="text" style="width: 400px; text-align: center" name="nombre" id="nombre"> </p>
+                            <p>Apellido: <input text="text" style="width: 400px; text-align: center" name="apellido" id="apellido"> </p>
+                            <p>Telefono: <input type="text" style="width: 400px; text-align: center" name="telefono" id="telefono">
+                            <p> E - Mail :  <input type="email" style= "width: 400px; text-align: center;" name="email" id="email"></p>
+                            <p>Consulta: <input type="text" style="width: 400px; height: 200px; text-align: center" name="consulta" id="consulta">
+
+                            </div>
+                            <!-- Signup form-->
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- * * SB Forms Contact Form * *-->
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- This form is pre-integrated with SB Forms.-->
+                            <!-- To make this form functional, sign up at-->
+                            <!-- https://startbootstrap.com/solution/contact-forms-->
+                            <!-- to get an API token!-->
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    {% endblock masterhead %}

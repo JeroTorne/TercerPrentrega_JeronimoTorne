@@ -1,0 +1,32 @@
+{% extends 'aplicacion/base.html' %}
+{% load static %}
+    {% block masterhead %}
+                    
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white">
+                            <!-- Page heading-->
+                            <h1 class="mb-5">Buscar Paciente</h1>
+                            <form action="/aplicacion/buscar2" method="get">
+                                {% csrf_token %}
+                                <input type="text" name="paciente" id="paciente"> 
+                                <input type="submit" value="Buscar">
+                            </form>
+                            <!-- Signup form-->
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- * * SB Forms Contact Form * *-->
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- This form is pre-integrated with SB Forms.-->
+                            <!-- To make this form functional, sign up at-->
+                            <!-- https://startbootstrap.com/solution/contact-forms-->
+                            <!-- to get an API token!-->
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    {% endblock masterhead %}

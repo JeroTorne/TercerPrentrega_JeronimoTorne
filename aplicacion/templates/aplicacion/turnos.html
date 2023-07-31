@@ -1,0 +1,29 @@
+{% extends 'aplicacion/base.html' %}
+{% load static %}
+    {% block masterhead %}    
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white">
+                            <!-- Page heading-->
+                            <h1 class="mb-5">Agende un turnos aquí</h1>
+                            <p>Usuario : <input type="text" style="width: 200px; text-align: center"  name="usuario" id="usuario"></p>
+                            <p> Fecha : <input type="date" style="width: 180px; text-align: center"  name="fecha_Turno" id="fecha_Turno"></p>
+                            <input type="submit" value="Agendar">
+                            <!-- Signup form-->
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- * * SB Forms Contact Form * *-->
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- This form is pre-integrated with SB Forms.-->
+                            <!-- To make this form functional, sign up at-->
+                            <!-- https://startbootstrap.com/solution/contact-forms-->
+                            <!-- to get an API token!-->
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    {% endblock masterhead %}   
